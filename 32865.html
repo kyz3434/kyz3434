@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANA Payment Gateway</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: #0e62bb;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="number"]:focus {
+            border-color: #0e62bb;
+            outline: none;
+        }
+
+        button {
+            background-color: #0e62bb;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #094177;
+        }
+
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .payment-methods img {
+            width: 60px;
+            margin: 0 15px;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .payment-methods img:hover {
+            opacity: 1;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f4f7fa;
+            color: #777;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>DANA Payment</h1>
+
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount (IDR):</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter amount to pay" required>
+            </div>
+
+            <button type="submit">Pay with DANA</button>
+        </form>
+
+        <div class="payment-methods">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Logo_dana_indonesia.svg/2560px-Logo_dana_indonesia.svg.png" alt="DANA" style="width: 100px;height: auto;">
+            <!-- Add more payment method images here -->
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 DANA Payment Gateway. All rights reserved.
+    </footer>
+
+</body>
+</html>
+```
